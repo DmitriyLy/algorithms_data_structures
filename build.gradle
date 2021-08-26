@@ -1,0 +1,7 @@
+plugins {
+    id 'java'
+}
+
+//sourceCompatibility = '11'
+group = 'net.dmly'
+version = '0.0.1-SNAPSHOT'
