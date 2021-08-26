@@ -45,14 +45,10 @@ public class InsertionSort {
                     }
 
                     buffer[i] = notSortedItem;
-
                     sourceArray = buffer;
-
                     break;
                 }
-
             }
-
         }
 
         return sourceArray;
