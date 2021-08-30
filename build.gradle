@@ -6,6 +6,14 @@ plugins {
 group = 'net.dmly'
 version = '0.0.1-SNAPSHOT'
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+}
+
 tasks.withType(JavaExec) {
     jvmArgs = ['-Xms1024m', '-Xmx4096m']
 }
