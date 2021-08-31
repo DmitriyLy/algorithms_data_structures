@@ -15,7 +15,7 @@ public class QuickSort {
         System.out.println(String.format("Sorted 1:      %s", Arrays.toString(sourceArray)));
     }
 
-    private static Integer[] quickSort1(Integer[] input) {
+    public static Integer[] quickSort1(Integer[] input) {
         if (input.length <= 1) {
             return input;
         }
@@ -64,7 +64,7 @@ public class QuickSort {
         return shortened;
     }
 
-    private static void quickSort2(Integer[] elements, int left, int right) {
+    public static void quickSort2(Integer[] elements, int left, int right) {
         if (left >= right) {
             return;
         }
