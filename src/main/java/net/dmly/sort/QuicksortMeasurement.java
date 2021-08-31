@@ -1,13 +1,10 @@
 package net.dmly.sort;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Stream;
 
 public class QuicksortMeasurement {
-    private static final int ITEM_COUNT = 1000_000;
+    private static final int ITEM_COUNT = 10_000_000;
     private static final int ITERATION_COUNT = 5;
 
     public static void main(String[] args) {
@@ -16,11 +13,11 @@ public class QuicksortMeasurement {
                 .limit(ITERATION_COUNT)
                 .forEach(i -> {
                     System.out.println(">>>>>>>> Iteration: " + (i + 1));
-                    Integer[] array = generateArray();
+                    var array = generateArray();
 
-                    long start = System.currentTimeMillis();
+                    var start = System.currentTimeMillis();
 
-                    Integer[] sorted = QuickSort.quickSort1(array);
+                    var sorted = QuickSort.quickSort1(array);
 
                     System.out.println("quickSort1 duration: " + (System.currentTimeMillis() - start));
 
